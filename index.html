@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>进位加法大冒险</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'cute-pink': '#FF9AA2',
+              'cute-blue': '#C7CEEA',
+              'cute-yellow': '#FFFFB5',
+              'cute-green': '#E2F0CB',
+              'cute-orange': '#FFDAC1',
+            },
+            fontFamily: {
+              'comic': ['"Comic Sans MS"', '"Chalkboard SE"', 'sans-serif'],
+            },
+            animation: {
+              'bounce-short': 'bounce 0.5s infinite',
+              'wiggle': 'wiggle 0.5s ease-in-out infinite',
+            },
+            keyframes: {
+              wiggle: {
+                '0%, 100%': { transform: 'rotate(-3deg)' },
+                '50%': { transform: 'rotate(3deg)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #fdf6e3;
+        overscroll-behavior: none;
+      }
+      @keyframes bounce {
+        0%, 100% { transform: translateY(-5%); }
+        50% { transform: translateY(0); }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
